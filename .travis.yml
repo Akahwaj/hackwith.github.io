@@ -2,7 +2,9 @@ language: ruby
 rvm:
 - 2.1
 
-install: gem install jekyll jekyll-sitemap redcarpet
+install:
+- gem install bundler
+- bundle install
 
 script:
-- jekyll build
+- bundle exec jekyll build
